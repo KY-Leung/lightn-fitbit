@@ -1,0 +1,109 @@
+<svg>
+  <!-- POPUPS -->
+  <svg id="popup-med-reminder" visibility="hidden">
+
+    <!-- Black background -->
+    <rect class="full-size" fill="fb-black" />
+
+    <!-- Title and text -->
+    <use href="#mixed-text-center-mid" class="dialog-mixed-text" fill="fb-white">
+      <set href="#top-padding" attributeName="display" to="none" />
+      <set href="#header/text" attributeName="text-buffer" to="New Dose: Duloxetine 30mg" />
+      <set href="#header/text" attributeName="fill" to="fb-magenta"/>
+      <set href="#bottom-padding" attributeName="display" to="none" />
+    </use>
+
+    <use id="btn-med-reminder" href="#square-button" y="$" fill="fb-red">
+      <set href="#text" attributeName="text-buffer" to="Acknowledge" />
+    </use>
+  </svg>
+ 
+  <!-- SCREENS -->
+  <svg id="screen-breathe" visibility="hidden">
+    <use href="#mixed-text-center-mid" height="100%" fill="fb-yellow">
+    <set href="#header/text" attributeName="text-buffer" to="BREATHE"/>
+    </use>
+  </svg>
+  <svg id="screen-activity" visibility="hidden">
+    <use href="#scrollview">
+      <use href="#scrollview-item">
+        <image href="calendar1.png" load="sync" />
+      </use>
+      <use href="#scrollview-item">
+        <image href="calendar2.png" load="sync" />
+      </use>
+    </use>
+  </svg>
+    <svg id="screen-calendar" visibility="hidden">
+    <use href="#scrollview">
+      <use href="#scrollview-item">
+        <image href="activity1.png" load="sync" />
+      </use>
+      <use href="#scrollview-item">
+        <image href="activity2.png" load="sync" />
+      </use>
+      <use href="#scrollview-item">
+        <image href="activity3.png" load="sync" />
+      </use>
+    </use>
+  </svg>
+  <svg id="screen-helpline" visibility="hidden">
+    <use href="#mixed-text-center-mid" height="70%" fill="fb-yellow">
+      <set href="#header/text" attributeName="text-buffer" to="You're not alone."/>
+    </use>
+    <use id="button-helpline" href="#square-button-icon" y="70%" fill="fb-yellow">
+      <set href="#image" attributeName="href" to="helpline.png"/>
+      <set href="#image" attributeName="display" to="inline"/>
+    </use>
+  </svg>
+  
+  <!-- MAIN MENU -->
+  <use id="btn-tl" href="#combo-button-upper-left" fill="fb-blue">
+    <set href="combo-button-icon" attributeName="href" to="breathe.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="breathe.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="btn-tr" href="#combo-button-upper-right" fill="fb-blue">
+    <set href="combo-button-icon" attributeName="href" to="calendar.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="calendar.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="btn-br" href="#combo-button-lower-right" fill="fb-peach">
+    <set href="combo-button-icon" attributeName="href" to="helpline.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="helpline.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+  <use id="btn-bl" href="#combo-button-lower-left" fill="fb-blue">
+    <set href="combo-button-icon" attributeName="href" to="activity.png"/>
+    <set href="combo-button-icon-press" attributeName="href" to="activity.png"/>
+    <set href="combo-button-stroke" attributeName="display" to="inline"/>
+  </use>
+   
+  <!-- emotion -->
+  <svg visibility="hidden">
+    <use id="emotion-btn-tl" href="#push-button" y="0%" height="50%" width="50%"
+      fill="#52CF67" font-family="System-Regular" font-size="40">
+      <set href="#text" attributeName="text-buffer" to="\ ( ^ ^ ) /"/>
+      <set href="#text" attributeName="fill" to="fb-white" />
+      <set href="#text" attributeName="y" to="12" />
+    </use>
+    <use id="emotion-btn-tr" href="#push-button" x="50%" height="50%" width="50%"
+      fill="#18C534" font-family="System-Regular" font-size="40">
+      <set href="#text" attributeName="text-buffer" to="(^_^)" />
+      <set href="#text" attributeName="fill" to="fb-white" />
+      <set href="#text" attributeName="y" to="12" />
+    </use>
+    <use id="emotion-btn-bl" href="#push-button" y="50%" height="50%" width="50%"
+      fill="#138EE1" font-family="System-Regular" font-size="40">
+      <set href="#text" attributeName="text-buffer" to="(・-・*)" />
+      <set href="#text" attributeName="fill" to="fb-white" />
+      <set href="#text" attributeName="y" to="12" />
+    </use>
+    <use id="emotion-btn-br" href="#push-button" x="50%" y="50%" height="50%" width="50%"
+      fill="#B82525" font-family="System-Regular" font-size="40">
+      <set href="#text" attributeName="text-buffer" to="(T_T)" />
+      <set href="#text" attributeName="fill" to="fb-white" />
+      <set href="#text" attributeName="y" to="12" />
+    </use>
+  </svg>
+</svg>
